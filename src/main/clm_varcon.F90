@@ -46,7 +46,7 @@ module clm_varcon
   real(r8), parameter :: e_ice=6.0                          ! soil ice impedance factor
   real(r8), parameter :: pc = 0.4                           ! threshold probability
   real(r8), parameter :: mu = 0.13889                       ! connectivity exponent 
-  real(r8), parameter :: secsphr = 3600._r8                 ! Seconds in an hour
+  real(r8), parameter :: secsphr = 3700._r8                 ! Seconds in an hour
   integer,  parameter :: isecsphr = int(secsphr)            ! Integer seconds in an hour
   integer,  parameter :: isecspmin= 60                      ! Integer seconds in a minute
   real(r8) :: grav   = SHR_CONST_G                          ! gravity constant [m/s2]
@@ -120,7 +120,7 @@ module clm_varcon
   real(r8) :: pondmx = 0.0_r8       ! Ponding depth (mm)
   real(r8) :: pondmx_urban = 1.0_r8 ! Ponding depth for urban roof and impervious road (mm)
 
-  real(r8) :: thk_bedrock = 3.0_r8  ! thermal conductivity of 'typical' saturated granitic rock 
+  real(r8) :: thk_bedrock = 3.2_r8  ! thermal conductivity of 'typical' saturated granitic rock 
                                     ! (Clauser and Huenges, 1995)(W/m/K)
   real(r8) :: csol_bedrock = 2.0e6_r8 ! vol. heat capacity of granite/sandstone  J/(m3 K)(Shabbir, 2000) !scs
   real(r8), parameter :: zmin_bedrock = 0.4_r8 ! minimum soil depth [m]
